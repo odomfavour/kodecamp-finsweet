@@ -16,6 +16,10 @@
     padding: 20px 5px;
 }
 
+.hamburger {
+    display: none
+}
+
 .right-section {
     display: flex;
     align-items: center;
@@ -52,15 +56,16 @@
     display: flex;
 }
 
-#hero-section .text-section{
+#hero-section .text-section {
     width: 45%;
-} 
+}
 
 #hero-section .image-section {
     width: 55%;
 }
 
-#hero-section, #quote-section {
+#hero-section,
+#quote-section {
     padding: 80px 0;
 }
 
@@ -117,7 +122,8 @@
     min-height: 100vh;
 }
 
-#quote-section .left-section, #quote-section .right-form-section {
+#quote-section .left-section,
+#quote-section .right-form-section {
     width: 45%;
 }
 
@@ -153,7 +159,7 @@
     margin-bottom: 5px;
 }
 
-#quote-section .right-form-section h3{
+#quote-section .right-form-section h3 {
     font-size: 48px;
 }
 
@@ -215,7 +221,7 @@
     margin-bottom: 10px;
 }
 
-#process-section .left-section h2{
+#process-section .left-section h2 {
     font-weight: 800;
     font-size: 58px;
     margin-top: 40px;
@@ -236,11 +242,12 @@
     min-height: 100vh;
 }
 
-#offers-section h2, #offers-section h5 {
+#offers-section h2,
+#offers-section h5 {
     text-align: center;
 }
 
-#offers-section .offers .offer-box{
+#offers-section .offers .offer-box {
     background: #fff;
     height: 232px;
     display: flex;
@@ -304,113 +311,217 @@
     background-position: center;
 }
 
-/* mobile view */
-@media (max-width: 426px) {
-    .main-header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+#faq-section {
+    background: #E2E6E9;
+    min-height: 100vh;
+    padding: 80px 0;
+}
 
-    .right-section {
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
+#faq-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#faq-section .faq-main-box {
+    width: 60%;
+    min-height: 400px;
+    margin: 0 auto;
+}
+
+#faq-section .faq-main-box .faq-box {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+#faq-section .faq-main-box .faq-box .faq-control {
+    background: #FF6433;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.faq-box .header-section h4 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.faq-box .header-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq-box .answer-section {
+    padding-top: 10px;
+}
+
+.faq-box .answer-section .answer-box {
+    width: 80%;
+}
+
+#testimony-section {
+    min-height: 100vh;
+    padding: 80px 0;
+}
+
+#testimony-section .testimony-slider {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+#testimony-section .testimony-slide {
+    width: 48%;
+    background: #FFFFFF;
+    border: 1px solid rgba(172, 172, 172, 0.29);
+    padding: 30px;
+    box-shadow: 11px 130px 100px 30px rgba(0, 0, 0, 0.02);
+    border-radius: 6px;
+}
+
+
+@media(max-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+    .container {
+        width: 90%;
+    }
+    .road-assistance {
         display: none;
     }
 
-    .right-section .navigation ul {
-        flex-direction: column;
-
-    }
-
-    .right-section .navigation {
-        border: none;
-        width: 100%;
-    }
-
-    .right-section ul li {
-        padding: 10px 0;
-        margin-right: 0;
-    }
-
-    .right-section ul li a {
-        display: block;
-    }
-
-    .road-assistance {
-        padding: 10px 0;
-    }
-
-    .flex-sm-column {
-        flex-direction: column;
-    }
-
-    #hero-section .text-section, #hero-section .image-section {
-        width: 100%;
-    }
-
-    #hero-section .text-section {
-        order: 2;
-    }
-
-    #hero-section .image-section {
-        order: 1;
+    #hero-section {
+        padding-top: 30px;
     }
 
     .text-section h1 {
+        font-size: 40px;
+    }
+
+    #quote-section .left-section h2, #quote-section .right-form-section h3, #process-section .left-section h2 {
         font-size: 35px;
     }
 
-    #quote-section .left-section, #quote-section .right-form-section {
-        width: 100%;
+    #quote-section .right-form-section h3 {
+        margin-bottom: 20px;
     }
 
     #quote-section .left-section .image-box {
-        width: 10%;
+        width: 12%;
     }
 
     #quote-section .left-section .text-box {
-        width: 80%;
-    }
-
-    #quote-section .left-section h2, #quote-section .right-form-section h3 {
-        font-size: 35px;
-    }
-
-    #quote-section .left-section {
-        margin-bottom: 40px;
-    }
-
-    #process-section .left-section, #process-section .right-process-section {
-        width: 100%;
+        width: 85%;
     }
 
     #process-section .left-section h2 {
-        width: 100%;
-    }
-
-    #process-section .left-section p{
-        width: 100%;
-    }
-
-    #process-section .left-section {
-        margin-bottom: 40px;
+        width: 85%;
     }
 
     #process-section .right-process-section .text-section h2 {
         padding-top: 0;
     }
 
-    #offers-section .offers .offer-box {
-        width: 100%;
+    #faq-section .faq-main-box {
+        width: 80%;
     }
 
-    /* .quote-flex {
-        flex-direction: column;
-    } */
 
 }
 
-@media (max-width: 769px) {
+@media(max-width: 426px) {
+    .small-header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+
+    .hamburger {
+        cursor: pointer;
+        display: block;
+    }
+
+    .small-header i {
+        font-size: 30px;
+    }
+
+    .right-section {
+        display: none;
+    }
+
+    .hero-flex {
+        flex-direction: column-reverse;
+    }
+
+    #hero-section .text-section, #hero-section .image-section {
+        width: 100%;
+    }
+
+    /* #hero-section .text-section {
+        order: 2;
+    }
+
+    #hero-section .image-section  {
+        order: 1;
+    } */
+
+    .quote-flex {
+        flex-direction: column;
+    }
+
+    #quote-section .left-section, #quote-section .right-form-section {
+        width: 100%;
+    }
+
+    .process-flex {
+        flex-direction: column;
+    }
+
+    #process-section .left-section {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #process-section .right-process-section {
+        width: 100%;
+    }
+
+    #offers-section .offers .offer-box {
+        width: 48%;
+    }
+
+    #tools-section {
+        flex-direction: column;
+    }
+
+    #tools-section .car-section, #tools-section .orange-section, #tools-section .auto-section {
+        width: 100%;
+    }
+
+    #testimony-section .testimony-slider {
+        flex-direction: column;
+    }
+
+    #testimony-section .testimony-slide {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #faq-section .faq-main-box {
+        width: 100%;
+    }
     
+}
+
+@media(max-width: 376px) {
+    #offers-section .offers .offer-box {
+        width: 100%;
+    }
 }
